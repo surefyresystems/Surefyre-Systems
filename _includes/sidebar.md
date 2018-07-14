@@ -1,4 +1,4 @@
-[Home](https://surefyresystems.github.io/Surefyre-Systems/wiki)
+[Home](https://surefyresystems.github.io/Surefyre-Systems/)
 ### 1 Navigation & Screens  
 1.1 [Basic Navigation](https://surefyresystems.github.io/Surefyre-Systems/wiki/Basic-Naviation)  
 1.2 [Home Page](https://surefyresystems.github.io/Surefyre-Systems/wiki/Home-Page)  
