@@ -1,0 +1,87 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Surefyre Systems Documentation
+email: support@surefyre.co
+description: >- # this means to ignore newlines until "baseurl:"
+  Surefyre Systems Documentation
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+#github_username:  jekyll
+
+# Build settings
+markdown: redcarpet
+theme: minima
+plugins:
+  - jekyll-feed
+##
+# Parameters for WikiToJekyll
+# Used by Rake:wikisub, Rake:wiki and wikiLinks generator plugin
+##
+wikiToJekyll:
+
+  # your user Github Name
+  user_name: surefyresystems
+
+  # your repository Name
+  repository_name: Surefyre-Systems
+
+  # set your remote name. 'origin' is the default name set
+  # when you do a 'git init'
+  # if you changed this name be sure to change this parameter
+  deploy_remote: "origin"
+
+  # for an organization / user, publication branch is master
+  # for a project, publication branch is gh-pages
+  deploy_branch: "gh-pages"
+
+  # wiki repository url
+  # if you live this blank, it will be derived from you code
+  # user_name and repository_name
+  #   eg : wiki_repository_url = user_name/repository_name/wiki'
+  #
+  # If you're importing a wiki from another code repository
+  # you MUST set this url
+  #
+  # IMPORTANT: no git@github.com: in front
+  #            You MUST use the htpps:// url or it will
+  #            cause a submodule error on github
+  #
+  # Example : https://github.com/userName/repositoryName.wiki.git
+
+  wiki_repository_url: # https://github.com/userName/repositoryName.wiki.git
+
+  # wiki submodule folder
+  # the underscore makes sure that this folder is ignored by Jekyll
+  wiki_source: "_wiki"
+
+  # wiki Jekyll generated pages destination folder
+  wiki_dest: "wiki"
+
+  # commit and push to Jekyll repository after wiki synchronisation
+  commit_and_push: false
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
