@@ -8,8 +8,8 @@
     {%- include header.html -%}
     <div class="sidenav">
 
-
-    {% include sidebar.html %}
+{% capture my_include %}{% include sidebar.md %}{% endcapture %}
+{{ my_include | markdownify }}
     </div>
 
     <main class="page-content main" aria-label="Content">
