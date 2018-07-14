@@ -4,11 +4,15 @@
   {%- include head.html -%}
 
   <body>
-
+    
     {%- include header.html -%}
-    {%- include sidebar.html -%}
+    <div class="sidenav">
 
-    <main class="page-content" aria-label="Content">
+
+    {% include sidebar.html %}
+    </div>
+
+    <main class="page-content main" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
