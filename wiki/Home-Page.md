@@ -5,7 +5,7 @@ wikiPageName: Home-Page
 menu: wiki
 ---
 
-The Home Page is what you'll see when you first log in and is always accessible via the **Home** button in the [Navigation Bar](https://github.com/surefyresystems/Surefyre-Systems/wiki/Basic-Naviation). The default home page dashboard contains several useful widgets that all serve two main functions:
+The Home Page is what you'll see when you first log in and is always accessible via the **Home** button in the [Navigation Bar](https://github.com/surefyresystems/Surefyre-Systems/wiki/Basic-Naviation). Note that visible widgets may differ based on your unique Surefyre configuration. The default home page dashboard contains several useful widgets that all serve two main functions:
 1. Provide important, high level information at a glance
 1. Make it easy for users to quickly perform common or upcoming activities
 

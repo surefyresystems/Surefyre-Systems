@@ -5,6 +5,8 @@ wikiPageName: Sidebar
 menu: wiki
 ---
 
+---
+---
 [Home](https://github.com/surefyresystems/Surefyre-Systems/wiki)
 ### 1 Navigation & Screens  
 1.1 [Basic Navigation](https://github.com/surefyresystems/Surefyre-Systems/wiki/Basic-Naviation)  
@@ -56,4 +58,3 @@ Email: Cancel a Scheduled Email
 [Email: Create an Email Campaign](https://github.com/surefyresystems/Surefyre-Systems/wiki/Create-and-Edit-Email-Campaigns)  
 [Email: Reschedule an Email](https://github.com/surefyresystems/Surefyre-Systems/wiki/How-To:-Reschedule-an-Email)  
 [DocGen: Create a Template Form](https://github.com/surefyresystems/Surefyre-Systems/wiki/How-To:-Create-A-Simple-Template-Form-for-DocGen)  
-{:toc}

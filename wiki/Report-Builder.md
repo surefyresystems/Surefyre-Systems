@@ -71,16 +71,22 @@ To run an existing report simply click the **Saved Reports** tab in the left col
 
 ## Creating / Editing Reports
 
+**1. Start with an existing report**  
 Whether creating a new report or editing an existing one, you must start by [running a saved report](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#running-saved-reports). Basic reports such as All Accounts, All Policies, etc. are available by default and are a good starting point for their respective [content types](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#report-content-types).
 > For example, if you'd like to create a report of people who are turning 65 next quarter, start with the default All People report and filter it down to just people whose birthdays fall in that date range.
 
+**2. Edit filters**  
 Once you have selected a saved report as a starting point, [edit the report filters](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#editing-report-filters) to exclude records that you don't want.
 > In our above birthday example, this would be the step where you would add Date of Birth field as a filter and set the desired date range. Any people with birthdays outside the filter range will not show up in the report.
 
-Next, [edit the report columns](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#editing-report-columns) to see the desired fields in each row.
-> Again in the above birthday example, you could add the Email field as a column to ensure that each person in the report has an email address before sending off a [mass email](https://github.com/surefyresystems/Surefyre-Systems/wiki/Email#mass-add-accounts-to-a-an-email-campaign).
+**3. Edit columns**  
+Next, [edit the report columns](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#editing-report-columns) to see the desired fields in each row. You can add/remove, relocate, and rename columns.
+> Again in the above birthday example, you could add the Email field as a column to ensure that each person in the report has an email address before sending off a [mass email](https://github.com/surefyresystems/Surefyre-Systems/wiki/Email#mass-add-accounts-to-a-an-email-campaign). You could also reposition columns and rename column headers to ensure data is ordered and named appropriately.
 
-Finally, save your changes to the current report by clicking **Save**. It's important to **save often** to ensure your changes are not lost. You can also save as a new report by clicking **Save As**. When creating a new report you can indicate a name and whether or not it's public. Public reports can be seen all any user in your Surefyre system that has access to the report builder. Note that default reports cannot be overwritten, so the Save button is not available.
+**4. Save changes**  
+Finally, save your changes to the current report by clicking **Save**. It's important to **save often** to ensure your changes are not lost. Note that you can only **Save** a report that you created. If you want to save changes to a report you did not create or want to save your changes as a new report, click **Save As**.
+
+Clicking **Save As** creates a new report with all your current filter and column configurations. You can indicate a name and whether or not it's public. **Public Reports** can be seen by any user in your Surefyre instance that has access to the report builder. Note that default reports cannot be overwritten, so **Save** is not an option, only **Save As**.
 
 ![](https://user-images.githubusercontent.com/31252743/37822978-55c0425e-2e45-11e8-8969-5b91fd3ea8e0.png)
 
@@ -92,7 +98,7 @@ In the example below we are filter an account report to only show leads for a sp
 ![](https://user-images.githubusercontent.com/31252743/37823459-c1fc647e-2e46-11e8-9fac-6c7dcf5ada0f.png)
 [Zoom](https://user-images.githubusercontent.com/31252743/37823459-c1fc647e-2e46-11e8-9fac-6c7dcf5ada0f.png)
 
-To add filters click the **+ Add Field** button below the existing filter fields. The field selection popup will appear with a list of all content type fields available for selection. See [Adding Filter / Column Fields](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#adding-filter--column-fields) for a guide to selecting filter fields.
+To add filters click the **+ Add Field** button below the existing filter fields. The field selection popup will appear with a list of all content type fields available for selection. See [Adding Filter / Column Fields](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#adding-filter--column-fields) for a guide to selecting filter fields. Don't forget to save your changes by clicking **Save** or **Save As**.
 
 ### Report Columns
 
@@ -100,7 +106,7 @@ Edit report columns to see all the desired data about the records in your report
 
 To add columns click the **+ Add Column** button in the view options of the report results window. The field selection popup will appear with a list of all content type fields available for selection. See [Adding Filter / Column Fields](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#adding-filter--column-fields) for a guide to selecting column fields.
 
-To reposition or rename columns (usually to prepare the data for import into a 3rd party system), click the pencil icon in the view options of report results window. This will enable **edit mode**. While in edit mode you can reposition columns by dragging and drop and rename them by clicking the column header title and entering a new value. When you're finished click **Done Editing**.
+To **reposition** or **rename columns** (usually to prepare the data for import into a 3rd party system), click the **pencil icon** in the view options of report results window. This will enable **edit mode**. While in edit mode you can reposition columns by dragging and drop and rename them by clicking the column header title and entering a new value. When you're finished click **Done Editing**. Don't forget to save your changes by clicking **Save** or **Save As**. 
 
 ### Adding Filter / Column Fields
 

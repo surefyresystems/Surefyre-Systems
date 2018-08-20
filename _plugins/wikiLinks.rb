@@ -203,7 +203,7 @@ class RedcarpetExtender < Redcarpet::Render::HTML
           #Jekyll.logger.error('Changed wiki url', page['jekyll_url'])
           #Jekyll.logger.error('Changed wiki url', page['possible_uris'])
         if page['possible_uris'].include?( @attr )
-          Jekyll.logger.error('Changed wiki url', "#{@attr['href']} => #{page['jekyll_url']}")
+          Jekyll.logger.error('Changed wiki url', "#{@attr} => #{page['jekyll_url']}")
           @attr = page['jekyll_url']
         end
       end
