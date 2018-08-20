@@ -1,4 +1,6 @@
 require "kramdown"
+require "redcarpet"
+require 'jekyll'
 
 
 # Jekyll module that modifies wiki pages links that refers to wiki pages
@@ -193,3 +195,42 @@ module Kramdown
   end
 
 end
+
+class RedcarpetExtender < Redcarpet::Render::HTML
+  def link(link, title, alt_text)
+      @attr = link
+      $wikiDatas['pages'].each_value do |page|
+          #Jekyll.logger.error('Changed wiki url', page['jekyll_url'])
+          #Jekyll.logger.error('Changed wiki url', page['possible_uris'])
+        if page['possible_uris'].include?( @attr )
+          Jekyll.logger.error('Changed wiki url', "#{@attr['href']} => #{page['jekyll_url']}")
+          @attr = page['jekyll_url']
+        end
+      end
+
+      "<a href=\"#{@attr}\">#{alt_text}</a>"
+  end
+  def autolink(link, link_type)
+      nil
+  end
+end
+
+class Jekyll::Converters::Markdown::RedcarpetExt
+  def initialize(config)
+    @site_config = config
+  end
+
+  def extensions
+    Hash[ *@site_config['redcarpet']['extensions'].map {|e| [e.to_sym, true]}.flatten ]
+  end
+
+  def markdown
+    @markdown ||= Redcarpet::Markdown.new(RedcarpetExtender, extensions)
+  end
+
+  def convert(content)
+    return super unless @site_config['markdown'] == 'RedcarpetExt'
+    markdown.render(content)
+  end
+end
+
