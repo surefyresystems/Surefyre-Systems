@@ -226,8 +226,8 @@ class Jekyll::Converters::Markdown::RedcarpetExt
 
   def markdown
           #Jekyll.logger.error('Extensions', extensions)
-    #@markdown ||= Redcarpet::Markdown.new(RedcarpetExtender, extensions)
-    @markdown ||= Redcarpet::Markdown.new(RedcarpetExtender.new(extensions))
+    @markdown ||= Redcarpet::Markdown.new(RedcarpetExtender, extensions)
+    #@markdown ||= Redcarpet::Markdown.new(RedcarpetExtender.new(extensions))
   end
 
   def convert(content)
