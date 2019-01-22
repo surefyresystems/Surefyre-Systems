@@ -17,6 +17,7 @@ This section explains the following:
   * [Removing Filter/Column Fields](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#removing-filter--column-fields)
 * [Pinning Reports](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#pinning-reports)
 * [Downloading Reports](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#downloading-reports)
+* [Bulk Updates](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#bulk-update)
 * [Mass Email](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#mass-email)  
 * [Video Tutorials](https://github.com/surefyresystems/Surefyre-Systems/wiki/Report-Builder#video-tutorials)
 
@@ -141,6 +142,27 @@ To pin a saved report to another user's dashboard or for an entire group (if per
 ## Downloading Reports
 
 Click the **Download** button in the left column to download the current report as a csv file. These files can be used for any number of external processes including upload into 3rd party systems.
+
+***
+
+## Bulk Update
+
+Some fields can be bulk updated for all records in a report. Users with the correct permissions can perform a bulk update by:
+1. **Run report**. All records that meet the report filter criteria will be updated, not just the records on the current page of the report.
+
+2. **Initiate bulk update**. Click the double bulk update icon (double forward arrow) in the header of the column that you want to update.
+![](https://user-images.githubusercontent.com/31252743/51500518-428ab100-1d9c-11e9-9bd7-1cef760b539a.png)
+[Zoom](https://user-images.githubusercontent.com/31252743/51500518-428ab100-1d9c-11e9-9bd7-1cef760b539a.png)
+
+3. **Input new value**. A popup will allow you to input or select a new value depending on the field type of the column (text, dropdown, date, etc.).
+![](https://user-images.githubusercontent.com/31252743/51500843-921dac80-1d9d-11e9-8237-41b875f50173.png)
+
+The report will automatically refresh and the updated values will be displayed in the returned results.
+
+![](https://user-images.githubusercontent.com/31252743/51500530-50403680-1d9c-11e9-9308-81dc4b0fa4f4.png)
+[Zoom](https://user-images.githubusercontent.com/31252743/51500530-50403680-1d9c-11e9-9308-81dc4b0fa4f4.png)
+
+Bulk update can save an incredible amount of time and energy when fixing, updating, or adding new data to many records at the same time. To ensure data integrity, it's recommended that this feature is only enabled for administrators or trained users. Contact your Surefyre representative to enable bulk updates. 
 
 ***
 

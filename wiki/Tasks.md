@@ -41,3 +41,9 @@ The Tasks tab gives users access to all Tasks in one place, regardless of user o
 Tasks associated to a particular Account are always available via the Tasks button in the [Account Header](https://github.com/surefyresystems/Surefyre-Systems/wiki/Side-Bar-and-Account-Header#account-header). When clicked, a popup will appear which looks similar to the Upcoming Tasks panel on the Home Page. Here you can view, create, and delete tasks for the account. Tasks created here will also show up in the Tasks tab and your Surefyre calendar.
 
 ![](https://user-images.githubusercontent.com/31252743/35487335-389675b2-042f-11e8-816b-d230c0cefc5a.png)
+
+***
+
+Related:
+
+* [Notification Templates](https://github.com/surefyresystems/Surefyre-Systems/wiki/Notification-Templates)

@@ -8,6 +8,7 @@ menu: wiki
 Any user with staff level permissions can easily add and edit users.
 * [Adding a User](https://github.com/surefyresystems/Surefyre-Systems/wiki/User-Setup#adding-a-user)
 * [Editing a User](https://github.com/surefyresystems/Surefyre-Systems/wiki/User-Setup#editing-a-user)
+* [Deleting / Deactivating a User](https://github.com/surefyresystems/Surefyre-Systems/wiki/User-Setup#deleting--deactivating-a-user)
 
 ***
 
@@ -36,3 +37,17 @@ Most fields are self-explanatory but a few things are worth noting:
 1. From any screen click the **Setup (gear) > Show Users**:
 
 2. Click **Edit (pencil)** in the user record that you'd like to edit.
+
+# Deleting / Deactivating a User
+
+To ensure data and context is not lost, users cannot be deleted in Surefyre. When a user is no longer needed, they can be deactivated which will remove their ability to log in and appropriately remove them from user facing areas of the system such as the list of taggable users in Comments.
+
+To deactivate a user you must have the proper permissions and follow the following steps:
+
+1. From any screen click the **Setup (gear) > Show Users**:
+
+2. Click **Edit (pencil)** in the user record that you'd like to edit.
+
+3. Uncheck **Active**
+
+Users can be re-activated from the Admin page or by your Surefyre administrator.

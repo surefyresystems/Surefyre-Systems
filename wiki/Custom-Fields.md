@@ -43,7 +43,7 @@ Custom fields in Surefyre are an important feature that allows you to track any 
 
 **Help Text** - Display text to help the user understand what data belongs in this field.
 
-**Field Choices** - Define the dropdown values available for selection. Only applies to Dropdown Choices field type. 
+**Field Choices** - Define the dropdown values available for selection. Only applies to Dropdown Choices field type. Choices should be separated by semicolon, example: `Choice 1;Choice 2;Choice 3`
 
 **Include Currency Symbol** - Display a currency symbol next to the field value. Only applies to Currency field type.
 

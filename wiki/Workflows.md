@@ -13,3 +13,10 @@ Access the Workflow configuration screen by clicking **Setup (gear) > Admin > Wo
 ### Understanding the Workflow Configuration Screen
 
 _More to come..._
+
+### Workflow Transition Actions
+Surefyre can automatically do things like send email notifications and assign tasks when a Workflow Transition takes place. Use the Workflow Transition Actions to ensure everyone is informed and all stakeholders have direction without any manual intervention.
+
+**Send Email Templates**
+
+[Email Templates](https://github.com/surefyresystems/Surefyre-Systems/wiki/Email-Templates) can be automatically sent to users, user groups, [account owners](https://github.com/surefyresystems/Surefyre-Systems/wiki/Account-Owners-and-Editors), [account editors](https://github.com/surefyresystems/Surefyre-Systems/wiki/Account-Owners-and-Editors), account followers, and/or the primary contact on the account. Note that these emails will display in the **Sent** tab within the [Email tab](https://github.com/surefyresystems/Surefyre-Systems/wiki/Email) on the account after they are sent.
