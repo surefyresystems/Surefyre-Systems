@@ -85,3 +85,9 @@ wikiToJekyll:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+#RedcarpetExt:
+#  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
+
+redcarpet:
+  extensions: ["with_toc_data"]

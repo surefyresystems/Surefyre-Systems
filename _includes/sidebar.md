@@ -41,6 +41,7 @@
 3.13 [Google & Outlook Integration](/wiki/Google-&-Outlook-Integration.html)  
 3.14 [Calendar Integration](/wiki/Calendar-Integration.html)  
 3.15 [Data Importer](/wiki/Data-Importer.html)  
+3.16 [Notification Templates](/wiki/Notification-Templates.html)
 ### 4 Tutorials  
 [Account: Add an Individual to a Group Account](/wiki/How-To:-Add-an-Individual-to-a-Group-Account.html)    
 [Account: Create an Account](/wiki/How-To:-Create-an-Account.html)   

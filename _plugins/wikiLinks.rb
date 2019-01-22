@@ -198,20 +198,19 @@ end
 
 class RedcarpetExtender < Redcarpet::Render::HTML
   def link(link, title, alt_text)
-      @attr = link
+      href, anchor = link.split("#", 2)
       $wikiDatas['pages'].each_value do |page|
           #Jekyll.logger.error('Changed wiki url', page['jekyll_url'])
           #Jekyll.logger.error('Changed wiki url', page['possible_uris'])
-        if page['possible_uris'].include?( @attr )
-          Jekyll.logger.error('Changed wiki url', "#{@attr} => #{page['jekyll_url']}")
-          @attr = page['jekyll_url']
+        if page['possible_uris'].include?( href )
+          Jekyll.logger.info('Changed wiki url', "#{href} => #{page['jekyll_url']}")
+          href = page['jekyll_url']
         end
       end
-
-      "<a href=\"#{@attr}\">#{alt_text}</a>"
-  end
-  def autolink(link, link_type)
-      nil
+      if anchor
+        return "<a href=\"#{href}##{anchor}\">#{alt_text}</a>"
+      end
+      return "<a href=\"#{href}\">#{alt_text}</a>"
   end
 end
 
@@ -221,11 +220,14 @@ class Jekyll::Converters::Markdown::RedcarpetExt
   end
 
   def extensions
+
     Hash[ *@site_config['redcarpet']['extensions'].map {|e| [e.to_sym, true]}.flatten ]
   end
 
   def markdown
-    @markdown ||= Redcarpet::Markdown.new(RedcarpetExtender, extensions)
+          #Jekyll.logger.error('Extensions', extensions)
+    #@markdown ||= Redcarpet::Markdown.new(RedcarpetExtender, extensions)
+    @markdown ||= Redcarpet::Markdown.new(RedcarpetExtender.new(extensions))
   end
 
   def convert(content)
